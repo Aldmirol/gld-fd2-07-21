@@ -8,7 +8,7 @@ function charSearch(str, symb) {
     while (indexPos !== -1) {
         symbCount++
 
-        indexPos = str.indexOf(symb, indexPos + symb.length));
+        indexPos = str.indexOf(symb, indexPos + symb.length);
     }
 
     if (symbCount === 0) {
