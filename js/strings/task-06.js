@@ -4,7 +4,7 @@
 function charSearch(str, symb) {
     let symbCount = 0;
 
-    for (i = 0; i < str.length; i++) {
+    for (let i = 0; i < str.length; i++) {
         if (str[i].includes(symb)) {
             symbCount++;
         }
