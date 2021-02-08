@@ -3,22 +3,23 @@
 
 function charSearch(str, symb) {
     let symbCount = 0;
+    let indexPos = str.indexOf(symb);
 
-    for (let i = 0; i < str.length; i++) {
-        if (str[i].includes(symb)) {
-            symbCount++;
-        }
+    while (indexPos !== -1) {
+        symbCount++
+
+        indexPos = str.indexOf(symb, indexPos + 1);
     }
 
     if (symbCount === 0) {
         console.log(`
         Строка "${str}"
-        не имеет вхождений символа ${symb}`);
+        не имеет вхождений подстроки ${symb}`);
     } else {
         console.log(`
         Строка "${str}"
-        имеет ${symbCount} вхождение(я) символа "${symb}"`);
+        имеет ${symbCount} вхождение(я) подстроки "${symb}"`);
     }
 }
 
-charSearch('anana', 'a');
+charSearch('Ann is the same is Anna', 'An');
