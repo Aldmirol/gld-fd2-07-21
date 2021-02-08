@@ -6,4 +6,8 @@ const hour = 4;
 const minute = 35;
 const second = 5;
 
-console.log(`${(hour + '').padStart(2, '0')}:${(minute + '').padStart(2, '0')}:${(second + '').padStart(2, '0')}`);
+const hourStr = (hour + '').padStart(2, '0');
+const minuteStr = (minute + '').padStart(2, '0');
+const secondStr = (second + '').padStart(2, '0');
+
+console.log(`${hourStr}${minuteStr.padStart(3, ':')}${secondStr.padStart(3, ':')}`);
