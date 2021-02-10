@@ -5,7 +5,7 @@ multiply() возвращает произведение введённых св
 history() возвращает историю вызванных функций при работе с объектом начиная с момента его создания.*/
 
 function Calculator() {
-    let historyList = [];
+    const historyList = [];
 
     this.read = function read() {
         this.firstVal = +prompt('Enter first value');
