@@ -5,10 +5,10 @@ testString = 'abc', result = 0
 testString = 'abc', test = 'd', result = -1
 testString = 'abc', test = 'a', test2 = 'b', result = 0*/
 
-function find(testString, test = testString) {
+function findSbstr(testString, test = testString) {
     const result = testString.indexOf(test);
 
     return console.log(result);
 }
 
-find('abc', 'b');
+findSbstr('abc', 'b');
