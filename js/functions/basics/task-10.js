@@ -13,6 +13,9 @@ function Calculator() {
 
         historyList.push(this.read.name);
     };
+    
+    this.read();
+    
     this.sum = function sum() {
         historyList.push(this.sum.name);
 
@@ -28,8 +31,6 @@ function Calculator() {
 
         return historyList;
     }
-
-    this.read();
 }
 
 const calc = new Calculator();
