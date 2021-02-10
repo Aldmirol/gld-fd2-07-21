@@ -6,7 +6,7 @@
     const arr = [1, 8, 3, 5, 12, 7, 9, 11];
 
     const multArrElem = arr => {
-        let arrSort = [];
+        const arrSort = [];
 
         for (let i = 0; i < arr.length; i++) {
             let elem = arr[i] * arr[i - 1];
