@@ -4,7 +4,7 @@
 const num = 100.5454545;
 
 function currency(strArr, num) {
-    return console.log(strArr[0] + '$' + num.toFixed(2));
+   return strArr[0] + '$' + num.toFixed(2);
 }
 
-currency `I have ${num}`;
+console.log(currency `I have ${num}`);
