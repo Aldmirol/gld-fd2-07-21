@@ -3,25 +3,23 @@
 Создайте конструкцию, с помощью которой сразу выполниться выше реализованная функция conc.Используйте IIFE.*/
 
 (function () {
-    const arr = [1, 8, 3, 5, 12, 7, 9, 11];
-
     const multArrElem = arr => {
-        const arrSort = [];
+        const arrSorted = [];
 
         for (let i = 0; i < arr.length; i++) {
-            let elem = arr[i] * arr[i - 1];
+            const elem = arr[i] * arr[i];
 
             if (elem < 100) {
-                arrSort.push(elem);
+                arrSorted.push(elem);
             }
         }
 
-        arrSort.sort(function (a, b) {
+        arrSorted.sort(function (a, b) {
             return a - b;
         });
 
-        console.log(arrSort);
+        console.log(arrSorted);
     };
 
-    multArrElem(arr);
+    multArrElem([1, 8, 3, 5, 12, 7, 9, 11]);
 })();
