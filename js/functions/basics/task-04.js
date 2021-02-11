@@ -4,10 +4,10 @@
     a = 'abc', b = 'abc', result = 1
 a = 'abC', b = 'abc', result = -1*/
 
-comp('abc', 'abc'); //не будет работать т.к. вызвано до обьявления, а функция FDE
+console.log(comp('abc', 'abc')); //не будет работать т.к. вызвано до обьявления, а функция FDE
 
-const comp = function(a, b) {
-    return console.log(a === b? 1: -1);
+const comp = function (a, b) {
+   return a === b ? 1 : -1;
 };
 
-// comp('abС', 'abc'); //будет работать т.к. вызвано после обьявления
+// console.log(comp('abС', 'abc')); //будет работать т.к. вызвано после обьявления
