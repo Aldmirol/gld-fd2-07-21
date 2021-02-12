@@ -5,6 +5,6 @@
 const params = 'a, b';
 const body = 'return a * b';
 
-const mult = new Function(params, body);
+const calcMult = new Function(params, body);
 
-console.log(mult(6, 5));
+console.log(calcMult(6, 5));
