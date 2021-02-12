@@ -2,10 +2,10 @@
 для кодов в диапазоне 78000 - 78030(все пары в диапазоне).
 Используйте String.prototype.fromCodePoint().*/
 
-function numSymb(start, end) {
+function convertNumToSymb(start, end) {
     for (start; start <= end; start++) {
         console.log(`${start} - ${String.fromCodePoint(start)}`);
     }
 }
 
-numSymb(78000, 78030);
+convertNumToSymb(78000, 78030);
