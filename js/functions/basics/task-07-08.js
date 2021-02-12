@@ -3,23 +3,23 @@
 Создайте конструкцию, с помощью которой сразу выполниться выше реализованная функция conc.Используйте IIFE.*/
 
 (function () {
-    const multArrElem = arr => {
-        const arrSorted = [];
+    const calcMultEveryArrElem = initialArr => {
+        const modyfyedArr = [];
 
-        for (let i = 0; i < arr.length; i++) {
-            const elem = arr[i] * arr[i];
+        for (let i = 0; i < initialArr.length; i++) {
+            const elem = initialArr[i] * initialArr[i];
 
             if (elem < 100) {
-                arrSorted.push(elem);
+                modyfyedArr.push(elem);
             }
         }
 
-        arrSorted.sort(function (a, b) {
+        modyfyedArr.sort(function (a, b) {
             return a - b;
         });
 
-        console.log(arrSorted);
+        return modyfyedArr;
     };
 
-    multArrElem([1, 8, 3, 5, 12, 7, 9, 11]);
+    console.log(calcMultEveryArrElem([1, 8, 3, 5, 12, 7, 9, 11]));
 })();
