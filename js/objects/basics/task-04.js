@@ -12,8 +12,8 @@ function Tune(title, artist) {
     };
 }
 
-const getFirstArtistTitle = new Tune('Whole Lotta Love', 'Led Zeppelin');
-const getSecondArtistTitle = new Tune('Amazing', 'Aerosmith');
+const getFirstArtistAndtTitle = new Tune('Whole Lotta Love', 'Led Zeppelin');
+const getSecondArtistAndTitle = new Tune('Amazing', 'Aerosmith');
 
-console.log(getFirstArtistTitle.concat());
-console.log(getSecondArtistTitle.concat());
+console.log(getFirstArtistAndtTitle.concat());
+console.log(getSecondArtistAndTitle.concat());
