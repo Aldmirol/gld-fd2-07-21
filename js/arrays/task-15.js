@@ -3,6 +3,8 @@
 
 const arrWithDuplicateEl = [5, 6, 9, 2, 1, 7, 1, 6];
 
-const arrWithoutDuplicateEl = arrWithDuplicateEl.filter((elem, index) => arrWithDuplicateEl.indexOf(elem) === index);
+const arrWithoutDuplicateEl = arrWithDuplicateEl.filter((elem, index) => {
+    return arrWithDuplicateEl.indexOf(elem) === index;
+});
 
 console.log(arrWithoutDuplicateEl);
