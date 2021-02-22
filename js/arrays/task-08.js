@@ -7,6 +7,12 @@
 
 const arrOfNum = [3, 0, -1, 12, -2, -4, 0, 7, 2];
 
-const sortedArrOfNum = arrOfNum.filter(elem => elem < 0).concat(arrOfNum.filter(elem => elem === 0)).concat(arrOfNum.filter(elem => elem > 0));
+const sortedArrOfNum = arrOfNum.filter(elem => {
+    return elem < 0;
+}).concat(arrOfNum.filter(elem => {
+    return elem === 0;
+})).concat(arrOfNum.filter(elem => {
+    return elem > 0;
+}));
 
 console.log(sortedArrOfNum);
