@@ -3,7 +3,9 @@
 
 const arrWithDupl = [5, 6, 9, 2, 1, 7, 1, 4, 1, 7, 7];
 
-const indexFirstDupl = arrWithDupl.findIndex((elem, index) => arrWithDupl.slice(index + 1).some(value => elem === value));
+const indexFirstDupl = arrWithDupl.findIndex((elem, index) => {
+    return arrWithDupl.slice(index + 1).some(value => elem === value);
+});
 
 const duplicate = arrWithDupl[indexFirstDupl];
 
