@@ -13,7 +13,7 @@ result = ©EPAM.*/
 function copyright(sign = '\u00A9') {
     return function(str) {
         return `${sign} ${str}`;
-    }
+    };
 }
 
 console.log(copyright('\u00A1')('EPAM'));
