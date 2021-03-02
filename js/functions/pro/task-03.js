@@ -24,7 +24,7 @@ const elfsCapital = {
     population: 2e5,
     race: 'elfs',
     fortified: true,
-}
+};
 
 function toConsoleTable(data) {
     console.table(data);
