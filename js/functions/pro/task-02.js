@@ -16,7 +16,6 @@ str('a'), console.log('String is non empty')*/
 
 function str(str) {
     return str && str.length > 0 ? `String is non empty` : `String is empty`;
-
 }
 
 str.isNonEmptySrt = function (str) {
