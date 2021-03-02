@@ -11,13 +11,13 @@ result = ["cherries, oranges, apples, bananas", "red, blue, yellow, black"].*/
 const parts = function(...args) {
     const start = ":";
     const end = ".";
-    const arr = [];
+    const arrOfSubstr = [];
 
     for (let elem of args) {
-        arr.push(elem.slice((elem.indexOf(start) + 2), elem.lastIndexOf(end)));
+        arrOfSubstr.push(elem.slice((elem.indexOf(start) + 2), elem.lastIndexOf(end)));
     }
 
-    return arr;
+    return arrOfSubstr;
 };
 
 console.log(parts("This is the first sentence. This is a sentence with a list of items: cherries, oranges, apples, bananas.", 
