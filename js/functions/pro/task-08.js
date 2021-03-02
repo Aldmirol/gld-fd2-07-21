@@ -20,7 +20,7 @@ function fibonachi() {
         memoryObj[num] = result;
 
         return result;
-    }
+    };
 }
 
 const fiboMemo = fibonachi();
