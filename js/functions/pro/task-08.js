@@ -10,7 +10,9 @@ function fibonachi() {
     return function fibo(num) {
         if (num in memoryObj) {
             return memoryObj[num];
-        } else if (num <= 1) {
+        } else if (num === 0) {
+            return 0;
+        } else if (num === 1) {
             return 1;
         }
 
