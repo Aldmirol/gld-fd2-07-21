@@ -15,22 +15,13 @@ str(), console.log('String is empty')
 str('a'), console.log('String is non empty')*/
 
 function str(str) {
-    if (str && str.length > 0) {
-        return `String is not empty`;
-    } else if (typeof str === 'number') {
-        return `Argument is not a string`
-    } else {
-        return `String is empty`;
-    }
+    return str && str.length > 0 ? `String is non empty` : `String is empty`;
+
 }
 
 str.isNonEmptySrt = function (str) {
-        if (str && str.length > 0) {
-            return `true`;
-        } else {
-            return `false`;
-        }
+    return str && str.length > 0 ? `true` : `false`;
 };
 
 console.log(str('Bilbo Baggins'));
-console.log(str.isNonEmptySrt('Frodo Baggins'))
+console.log(str.isNonEmptySrt('Frodo Baggins'));
