@@ -55,7 +55,7 @@ class VirtualFish {
                 color = obj.color;
             }
 
-            const babyFish = new VirtualFish({
+            return new VirtualFish({
                 x: this.x,
                 y: this.y,
                 z: this.z,
@@ -63,8 +63,6 @@ class VirtualFish {
                 weight: 1,
                 gender: gender,
             });
-
-            return babyFish;
         } else {
             return 'not today';
         }
