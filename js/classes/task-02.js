@@ -71,10 +71,6 @@ class VirtualFish {
     set ration(value) {
         this.#ration.push(value);
     }
-
-    get ration() {
-        return this.ration;
-    }
 }
 
 const carpMale = new VirtualFish({
