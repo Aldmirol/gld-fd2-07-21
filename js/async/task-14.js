@@ -17,6 +17,7 @@ const urlArr = ['http://a', 'http://b'];
 async function myThirdAsyncFunction(urlArr) {
     function sendRequest(url) {
         console.log('sendRequest is called');
+        
         const resData1 = {
             name: 'Ann',
         };
