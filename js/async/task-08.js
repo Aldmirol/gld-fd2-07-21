@@ -7,7 +7,7 @@ function getPromiseData(promise) {
 }
 
 const obj = {
-    name: 'Anna'
+    name: 'Anna',
 };
 
 const wrap = Promise.resolve(obj);

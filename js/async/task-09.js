@@ -11,7 +11,7 @@
 const namePromise = new Promise((res, rej) => {
     setTimeout(() => {
         res({
-            name: 'Anna'
+            name: 'Anna',
         });
     }, 2000);
 });
@@ -19,7 +19,7 @@ const namePromise = new Promise((res, rej) => {
 const agePromise = new Promise((res, rej) => {
     setTimeout(() => {
         res({
-            age: 16
+            age: 16,
         });
     }, 3000);
 });

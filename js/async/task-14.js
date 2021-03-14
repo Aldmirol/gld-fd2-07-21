@@ -18,10 +18,10 @@ async function myThirdAsyncFunction(urlArr) {
     function sendRequest(url) {
         console.log('sendRequest is called');
         const resData1 = {
-            name: 'Ann'
+            name: 'Ann',
         };
         const resData2 = {
-            age: 16
+            age: 16,
         };
         const resTimeoutPromise = function (resData, milliseconds) {
             return new Promise((res, rej) => {

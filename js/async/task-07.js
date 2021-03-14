@@ -6,7 +6,7 @@ catch.
 const timeoutPromise = new Promise((res, rej) => {
     setTimeout(() => {
         res('My name is ');
-    }, 1000)
+    }, 1000);
 });
 
 function onSuccess(value) {
@@ -20,6 +20,6 @@ function print(value) {
 timeoutPromise
     .then(onSuccess)
     .then(print)
-    .catch((error) => {
+    .catch(error => {
         console.log(new Error(error));
     });

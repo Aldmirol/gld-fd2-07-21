@@ -7,7 +7,7 @@ Cоздайте функцию mySecondAsyncFunction, используя FD(Func
 
 async function mySecondAsyncFunction(url) {
     function makeRequest(url) {
-        console.log("MakeRequest is called");
+        console.log('MakeRequest is called');
 
         return new Promise((res, rej) => {
             setTimeout(() => {

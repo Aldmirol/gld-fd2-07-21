@@ -7,7 +7,7 @@
 const timeoutPromise = new Promise((res, rej) => {
     setTimeout(() => {
         res('My name is ');
-    }, 1000)
+    }, 1000);
 });
 
 function onSuccess(value) {
