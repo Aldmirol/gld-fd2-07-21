@@ -26,8 +26,9 @@ const agePromise = new Promise((res, rej) => {
 
 Promise.all([namePromise, agePromise])
     .then(values => {
-        console.log(values.reduce((acc, value) => acc = {
+        return values.reduce((acc, value) => acc = {
             ...acc,
             ...value
-            }));
-    });
+        });
+    })
+    .then(console.log);
