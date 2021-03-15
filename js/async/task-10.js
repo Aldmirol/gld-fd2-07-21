@@ -17,4 +17,14 @@ const agePromise = new Promise((res, rej) => {
 });
 
 Promise.allSettled([namePromise, agePromise])
+    .then(data => {
+        const succefulPromises = data.filter(obj => obj.status === "fulfilled").map(elem => elem.value);
+        const unSuccefulPromises = data.filter(obj => obj.status === "rejected").map(elem => elem.reason);
+
+        if (unSuccefulPromises.length > 0) {
+            return `Not all promises are resolved. Rejected errors: ${unSuccefulPromises}`;
+        } else {
+            return succefulPromises;
+        }
+    })
     .then(console.log);
